@@ -26,6 +26,9 @@ body {
     padding: 15px;
 }
 
+h1, h2 {
+    text-align: center;
+}
 .navigation {
     display: grid;
     grid-template-columns: auto auto auto;
