@@ -91,3 +91,17 @@ hr {
     height: auto;
 
 }
+
+.navlink {
+    margin: 50px;
+    
+}
+
+.navlink ul {
+    border: 1px solid rgb(201, 190, 190);
+    padding: 30px;
+}
+
+.navlink ul li a {
+    text-decoration: none;
+}
