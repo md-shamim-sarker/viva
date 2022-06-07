@@ -34,24 +34,27 @@ h1, h2 {
     grid-template-columns: auto auto auto;
     justify-items: center;
     gap: 15px;
+    justify-content: center;
 }
 
 .navigation a {
     display: block;
-    padding: 50px;
+    padding: 10px;
     margin: 15px;
-    background-color: aqua;
-    border-radius: 50%;
+    background-color: #4B6C8B;
+    border-radius: 20px;
+    width: 200px;
     text-decoration: none;
-    color: white;
+    color: #ffffff;
+    text-align: center;
 }
 
 .navigation a:hover {
-    background-color: rgb(15, 151, 151);
+    background-color: #C28E90;
 }
 
 .navigation a:visited {
-    background-color: rgb(22, 77, 77);
+    background-color: #093955;
 }
 
 hr {
@@ -83,6 +86,15 @@ hr {
     
     .navigation {
         grid-template-columns: auto;
+    }
+
+    .navigation a {
+        padding: 10px;
+        margin: 1px;
+        width: 400px;
+        text-decoration: none;
+        color: #ffffff;
+        text-align: center;
     }
 }
 
