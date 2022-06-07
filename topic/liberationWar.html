@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,8 @@
     <link rel="stylesheet" href="../src/style.css">
     <link rel="shortcut icon" href="../media/favicon.png" type="image/x-icon">
     <title>Liberation War</title>
-    <script src="../src/script.js"></script>
 </head>
+
 <body>
     <div class="container">
         <div class="banner">
@@ -133,22 +134,42 @@
         </div>
 
         <button class="accordion" style="font-size:large; font-weight: bold;">Download Zone for Offline Reading</button>
-            <div class="panel">
-                <ul>
-                    <li><a href="../media/six/Bangladesh_History_Six.pdf">বাংলাদেশের ইতিহাস - ষষ্ঠ শ্রেণি</a></li>
-                    <li><a href="../media/seven/Bangladesh_Liberation_War_Seven.pdf">বাংলাদেশের স্বাধীনতা সংগ্রাম - সপ্তম শ্রেণি</a></li>
-                    <li><a href="../media/eight/Colonial_Age_Bangla_Liberation_War_Eight.pdf">ঔপনিবেশিক যুগ ও বাংলার স্বাধীনতা - অষ্টম শ্রেণি</a></li>
-                    <li><a href="../media/eight/Bangladesh_Liberation_War_Eight.pdf">বাংলাদেশের মুক্তিযুদ্ধ - অষ্টম শ্রেণি</a></li>
-                    <li><a href="../media/nine/Movement_Nationalism_Nine.pdf">পূর্ব বাংলার আন্দোলন ও জাতীয়তাবাদের উত্থান - নবম শ্রেণি</a></li>
-                    <li><a href="../media/nine/Independent_Bangladesh_Nine.pdf">স্বাধীন বাংলাদেশ - নবম শ্রেণি</a></li>
-                </ul>
-            </div>
+        <div class="panel">
+            <ul>
+                <li><a href="../media/six/Bangladesh_History_Six.pdf">বাংলাদেশের ইতিহাস - ষষ্ঠ শ্রেণি</a></li>
+                <li><a href="../media/seven/Bangladesh_Liberation_War_Seven.pdf">বাংলাদেশের স্বাধীনতা সংগ্রাম - সপ্তম
+                        শ্রেণি</a></li>
+                <li><a href="../media/eight/Colonial_Age_Bangla_Liberation_War_Eight.pdf">ঔপনিবেশিক যুগ ও বাংলার
+                        স্বাধীনতা - অষ্টম শ্রেণি</a></li>
+                <li><a href="../media/eight/Bangladesh_Liberation_War_Eight.pdf">বাংলাদেশের মুক্তিযুদ্ধ - অষ্টম
+                        শ্রেণি</a></li>
+                <li><a href="../media/nine/Movement_Nationalism_Nine.pdf">পূর্ব বাংলার আন্দোলন ও জাতীয়তাবাদের উত্থান -
+                        নবম শ্রেণি</a></li>
+                <li><a href="../media/nine/Independent_Bangladesh_Nine.pdf">স্বাধীন বাংলাদেশ - নবম শ্রেণি</a></li>
+            </ul>
+        </div>
         <div class="footer">
             <hr>
             <p>&copy; আমি শামীম সরকার। এই সাইটের কোনো রকম কপিরাইট নেই।</p>
         </div>
     </div>
 
-    
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
 </body>
+
 </html>
