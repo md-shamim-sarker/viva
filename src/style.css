@@ -86,22 +86,34 @@ hr {
     }
 }
 
-.image img {
+.accordion {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.panel {
+    display: none;
+    overflow: hidden;
+}
+
+.panel img {
     max-width: 100%;
     height: auto;
-
 }
 
-.navlink {
-    margin: 50px;
-    
+ul{
+    margin-left: 100px;
 }
 
-.navlink ul {
-    border: 1px solid rgb(201, 190, 190);
-    padding: 30px;
+ul li {
+    padding: 5px;
 }
 
-.navlink ul li a {
+ul li a {
     text-decoration: none;
+}
+
+ul li a:hover, ul li a:visited {
+    color: black;
 }
